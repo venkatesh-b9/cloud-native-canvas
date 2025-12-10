@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import devopsBgSkills from "@/assets/devops-bg-skills.jpg";
 
 const skillCategories = [
   {
@@ -58,8 +59,17 @@ const Skills = () => {
 
   return (
     <section id="skills" className="relative py-32 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img 
+          src={devopsBgSkills} 
+          alt="" 
+          className="w-full h-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+      </div>
       {/* Background */}
-      <div className="absolute inset-0 gradient-bg-hero opacity-30" />
+      <div className="absolute inset-0 gradient-bg-hero opacity-20" />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
