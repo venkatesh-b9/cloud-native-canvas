@@ -14,7 +14,7 @@ const experiences = [
   {
     company: "PRIACC Innovations",
     role: "DevOps Engineer",
-    period: "May 2025 – Present",
+    period: "Jan 2025 – Present",
     location: "India",
     responsibilities: [
       {
